@@ -7,4 +7,8 @@ describe('Fixnum#numbers_to_words') do
     expect((5).numbers_to_words()).to(eq('five'))
   end
 
+  it('translates double digit from 10 - 19 to words') do
+    expect((12).numbers_to_words()).to(eq('twelve'))
+  end
+
 end
